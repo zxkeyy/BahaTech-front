@@ -1,9 +1,11 @@
+import { Box } from "@chakra-ui/react";
+
 const HomePage = () => {
   return (
-    <div>
+    <Box bgColor={'grey'}>
       <h1>Home Page</h1>
-    </div>
+    </Box>
   );
-}
+};
 
 export default HomePage;

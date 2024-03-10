@@ -1,4 +1,6 @@
 import { Box, Button, HStack, Text } from "@chakra-ui/react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { LiaToolsSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,6 +9,7 @@ const Navbar = () => {
       display={"flex"}
       justifyContent={"space-between"}
       alignItems={"center"}
+      paddingX={10}
     >
       <Box width={150} height={150}>
         <Link to="/">
@@ -22,11 +25,23 @@ const Navbar = () => {
         alignItems={"center"}
         width={"25%"}
       >
-        <Link to="/"><Text fontSize={16}>HOME</Text></Link>
-        <Link to="/"><Text fontSize={16}>ABOUT US</Text></Link>
-        <Link to="/"><Text fontSize={16}>SERVICES</Text></Link>
-        <Link to="/"><Text fontSize={16}>STORE</Text></Link>
-        <Link to="/"><Text fontSize={16}>CONTACTS</Text></Link>
+        <Link to="/">
+          <Text fontSize={16} color={"brand.500"}>
+            HOME
+          </Text>
+        </Link>
+        <Link to="/">
+          <Text fontSize={16}>ABOUT US</Text>
+        </Link>
+        <Link to="/">
+          <Text fontSize={16}>SERVICES</Text>
+        </Link>
+        <Link to="/">
+          <Text fontSize={16}>STORE</Text>
+        </Link>
+        <Link to="/">
+          <Text fontSize={16}>CONTACTS</Text>
+        </Link>
       </Box>
       <Box
         display={"flex"}
@@ -34,8 +49,12 @@ const Navbar = () => {
         alignItems={"center"}
         width={"10%"}
       >
-        <Link to="/">Settings</Link>
-        <Link to="/">Cart</Link>
+        <Link to="/">
+          <LiaToolsSolid color="#009688" />
+        </Link>
+        <Link to="/">
+          <AiOutlineShoppingCart color="#009688"/>
+        </Link>
         <Link to="/">
           <Button>LOGIN</Button>
         </Link>
