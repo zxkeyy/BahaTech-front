@@ -1,7 +1,9 @@
-import { Box, Button, HStack, Text } from "@chakra-ui/react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Box, Button, HStack, Image } from "@chakra-ui/react";
 import { LiaToolsSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import NavButton from "./NavButton";
+import Logo from "../../assets/Logo bt snbg 1.png";
+import Cart from "./Cart";
 
 const Navbar = () => {
   return (
@@ -10,11 +12,13 @@ const Navbar = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       paddingX={10}
+      height={"100px"}
     >
-      <Box width={150} height={150}>
+      <Box height={"100px"}>
         <Link to="/">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/fdf9/8363/902221d629515d9ca40f27d15248d00a?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Z2ZUOAF0lA~7YCQmNzT9OryupcdEodvOUnQ7CubjQd8o41OaD6f~lGwtRsSyl2gXjidRnYBEf-EnAKN~b58~VSELp9pEmBiuwDx04f-oQZw9z5SvmO5BMq-yhsGI9CZFY4capPAiJbjgxR51FHdvltIs~LZ8wTCNeHhybG4T946MdhULlbE7QxYUjs6tL1q7BGRHHkbbFYTBn2FIsxfUzb9RLFk6jaVavZHeNS9ykSXDg~5r-LZcuUl3KWbe304~wk4tGhO~yxllVupzC~wbx3uqRucB40lRBFZbg-qKEKWSAf4prhUFtFBnx9aoCC4DKGgDZdkR4EbkeH~hzEHO-w__"
+          <Image
+            height={"100%"}
+            src={Logo}
             alt="BahaTech"
           />
         </Link>
@@ -24,23 +28,34 @@ const Navbar = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
         width={"25%"}
+        height={"100%"}
       >
         <Link to="/">
-          <Text fontSize={16} color={"brand.500"}>
-            HOME
-          </Text>
+          <NavButton aria-selected={location.pathname === "/"}>HOME</NavButton>
         </Link>
-        <Link to="/">
-          <Text fontSize={16}>ABOUT US</Text>
+
+        <Link to="/about">
+          <NavButton aria-selected={location.pathname === "/about"}>
+            ABOUT US
+          </NavButton>
         </Link>
-        <Link to="/">
-          <Text fontSize={16}>SERVICES</Text>
+
+        <Link to="/services">
+          <NavButton aria-selected={location.pathname === "/services"}>
+            SERVICES
+          </NavButton>
         </Link>
-        <Link to="/">
-          <Text fontSize={16}>STORE</Text>
+
+        <Link to="/store">
+          <NavButton aria-selected={location.pathname === "/store"}>
+            STORE
+          </NavButton>
         </Link>
-        <Link to="/">
-          <Text fontSize={16}>CONTACTS</Text>
+
+        <Link to="/contacts">
+          <NavButton aria-selected={location.pathname === "/contacts"}>
+            CONTACTS
+          </NavButton>
         </Link>
       </Box>
       <Box
@@ -52,9 +67,7 @@ const Navbar = () => {
         <Link to="/">
           <LiaToolsSolid color="#009688" />
         </Link>
-        <Link to="/">
-          <AiOutlineShoppingCart color="#009688"/>
-        </Link>
+        <Cart height={"40px"} width={"40px"}/>
         <Link to="/">
           <Button>LOGIN</Button>
         </Link>
