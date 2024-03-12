@@ -1,9 +1,10 @@
 import { Box } from "@chakra-ui/react";
+import Hero from "./Components/Hero";
 
 const HomePage = () => {
   return (
-    <Box bgColor={'grey'}>
-      <h1>Home Page</h1>
+    <Box bgColor={"bg.500"}>
+      <Hero />
     </Box>
   );
 };
