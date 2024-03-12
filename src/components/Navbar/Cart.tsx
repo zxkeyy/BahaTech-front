@@ -8,7 +8,7 @@ const Cart = (props: Props) => {
     <Box position={"relative"} {...props}>
       <Box
         style={{
-          fontSize: innerHeight / 80,
+          fontSize: window.innerWidth / 150,
           fontWeight: "bold",
           color: "white",
         }}
