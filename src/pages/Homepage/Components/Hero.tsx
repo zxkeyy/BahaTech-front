@@ -55,7 +55,7 @@ const Hero = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          height={"150px"}
+          aspectRatio={320 / 150}
           width={"20%"}
           borderRight={"1px"}
           borderColor={"bg.500"}
@@ -72,7 +72,7 @@ const Hero = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          height={"150px"}
+          aspectRatio={320 / 150}
           width={"20%"}
           borderRight={"1px"}
           borderColor={"bg.500"}
@@ -89,7 +89,7 @@ const Hero = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          height={"150px"}
+          aspectRatio={320 / 150}
           width={"20%"}
           borderRight={"1px"}
           borderColor={"bg.500"}
@@ -106,7 +106,7 @@ const Hero = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          height={"150px"}
+          aspectRatio={320 / 150}
           width={"20%"}
           borderRight={"1px"}
           borderColor={"bg.500"}
@@ -123,7 +123,7 @@ const Hero = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          height={"150px"}
+          aspectRatio={320 / 150}
           width={"20%"}
           borderRight={"1px"}
           borderColor={"bg.500"}
@@ -140,7 +140,7 @@ const Hero = () => {
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
-          height={"150px"}
+          aspectRatio={320 / 150}
           width={"20%"}
         >
           <Box width={"20%"} marginRight={"5%"}>
