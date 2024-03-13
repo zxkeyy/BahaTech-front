@@ -15,6 +15,9 @@ const Navbar = () => {
       alignItems={"center"}
       height={"100px"}
       paddingX={5}
+      position={"sticky"}
+      top={0}
+      zIndex={999}
     >
       <Box height={"100px"}>
         <Link to="/">
