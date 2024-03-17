@@ -18,12 +18,13 @@ const Panel9 = () => {
       <Box
         display={"flex"}
         width={"70%"}
+        height={"70%"}
         justifyContent={"space-between"}
         marginTop={"2%"}
       >
         <Box
-          width={"270px"}
-          height={"540px"}
+          width={"20%"}
+          height={"100%"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
@@ -35,15 +36,15 @@ const Panel9 = () => {
             bgSize={"100%"}
             width={"100%"}
           ></Box>
-          <Heading textAlign={"center"} fontSize={"18px"} minHeight={"50px"}>
+          <Heading textAlign={"center"} fontSize={"18px"} height={"50px"}>
             Aluminum Housing Home Security Camera
           </Heading>
           <Text>$89.00 - $99.00</Text>
           <ActionButton width={"90%"}>Select Options</ActionButton>
         </Box>
         <Box
-          width={"270px"}
-          height={"540px"}
+          width={"20%"}
+          height={"100%"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
@@ -55,15 +56,15 @@ const Panel9 = () => {
             bgSize={"100%"}
             width={"100%"}
           ></Box>
-          <Heading textAlign={"center"} fontSize={"18px"} minHeight={"50px"}>
+          <Heading textAlign={"center"} fontSize={"18px"} height={"50px"}>
             Digital Safety Door Lock
           </Heading>
           <Text>$69.00 - $79.00</Text>
           <ActionButton width={"90%"}>Select Options</ActionButton>
         </Box>
         <Box
-          width={"270px"}
-          height={"540px"}
+          width={"20%"}
+          height={"100%"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
@@ -75,15 +76,15 @@ const Panel9 = () => {
             bgSize={"100%"}
             width={"100%"}
           ></Box>
-          <Heading textAlign={"center"} fontSize={"18px"} minHeight={"50px"}>
+          <Heading textAlign={"center"} fontSize={"18px"} height={"50px"}>
             Wireless Audio-Recording Night WebCam
           </Heading>
           <Text>$74.99 - $82.25</Text>
           <ActionButton width={"90%"}>Select Options</ActionButton>
         </Box>
         <Box
-          width={"270px"}
-          height={"540px"}
+          width={"20%"}
+          height={"100%"}
           display={"flex"}
           flexDirection={"column"}
           alignItems={"center"}
@@ -95,7 +96,7 @@ const Panel9 = () => {
             bgSize={"100%"}
             width={"100%"}
           ></Box>
-          <Heading textAlign={"center"} fontSize={"18px"} minHeight={"50px"}>
+          <Heading textAlign={"center"} fontSize={"18px"} height={"50px"}>
             Invasion Proof Digital Safe
           </Heading>
           <Text>$189.00 - $239.00</Text>

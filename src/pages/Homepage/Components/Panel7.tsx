@@ -14,10 +14,15 @@ const Panel7 = () => {
       alignItems={"center"}
       paddingX={"400px"}
     >
-      <Text color={"white"} maxWidth={"50%"} fontSize={"40px"}>
+      <Text
+        color={"white"}
+        maxWidth={"50%"}
+        maxHeight={"100%"}
+        fontSize={"40px"}
+      >
         Delivering the <b>best security solutions</b> to our clients
       </Text>
-      <ActionButton fontSize={"12px"} height={"18%"} width={"20%"}>
+      <ActionButton fontSize={"12px"} height={"18%"}>
         MAKE AN APPOINTMENT
       </ActionButton>
     </Box>

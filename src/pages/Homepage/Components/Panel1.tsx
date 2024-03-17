@@ -33,28 +33,25 @@ const Panel1 = () => {
       </Box>
       <Box height={"100%"} width={"50%"} paddingLeft={"5%"} paddingY={"3%"}>
         <Box width={"60%"}>
-          <Heading
-            fontSize={window.innerWidth / 70}
-            color={"brand.500"}
-            marginBottom={"3%"}
-          >
+          <Heading fontSize={"20px"} color={"brand.500"} marginBottom={"3%"}>
             ABOUT US
           </Heading>
           <Text
-            fontSize={window.innerWidth / 50}
+            fontSize={"33px"}
             fontWeight={"bold"}
             marginBottom={"3%"}
+            maxHeight={"100px"}
           >
             Over 11 Years of Experience in Serving People
           </Text>
           <Box
-            height={"15px"}
-            width={"200px"}
+            height={"5px"}
+            width={"100px"}
             borderRadius={"30px"}
             bgColor={"brand.500"}
             marginBottom={"5%"}
           ></Box>
-          <Text fontSize={window.innerWidth / 100} color={"gray.600"}>
+          <Text fontSize={"20px"} color={"gray.600"} maxHeight={"100px"}>
             We are a certified security company, We have consistently satisfied
             our customers with our amazing security services.
           </Text>
@@ -66,13 +63,14 @@ const Panel1 = () => {
           borderRadius={"10px"}
           marginTop={"3%"}
           display={"flex"}
+          maxHeight={"100px"}
         >
           <Box width={"15%"} height={"100%"} display={"flex"} padding={"1%"}>
             <FaCheckCircle size={"full"} color="#009688" />
           </Box>
           <Box padding={"2%"}>
-            <Heading fontSize={window.innerWidth / 70}>Our Mission</Heading>
-            <Text fontSize={window.innerWidth / 100} color={"gray.600"}>
+            <Heading fontSize={"25px"}>Our Mission</Heading>
+            <Text fontSize={"20px"} color={"gray.600"}>
               Our mission is to provide the best security services to our
               customers.
             </Text>
@@ -85,13 +83,14 @@ const Panel1 = () => {
           borderRadius={"10px"}
           marginTop={"3%"}
           display={"flex"}
+          maxHeight={"100px"}
         >
           <Box width={"15%"} height={"100%"} display={"flex"} padding={"1%"}>
             <FaCheckCircle size={"full"} color="#009688" />
           </Box>
           <Box padding={"2%"}>
-            <Heading fontSize={window.innerWidth / 70}>Our Vision</Heading>
-            <Text fontSize={window.innerWidth / 100} color={"gray.600"}>
+            <Heading fontSize={"25px"}>Our Vision</Heading>
+            <Text fontSize={"20px"} color={"gray.600"}>
               Our vision is to improve and expand our services to the whole
               world.
             </Text>

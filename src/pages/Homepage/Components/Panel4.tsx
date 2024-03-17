@@ -1,6 +1,7 @@
-import { Heading, Button, Box, Text } from "@chakra-ui/react";
+import { Heading, Box, Text } from "@chakra-ui/react";
 import { BiShieldQuarter } from "react-icons/bi";
 import Image1 from "../../../assets/Panel4Image1.png";
+import ActionButton from "../../../components/ActionButton";
 
 const Panel4 = () => {
   return (
@@ -22,28 +23,25 @@ const Panel4 = () => {
         alignItems={"center"}
       >
         <BiShieldQuarter color="#009688" size={"30%"} />
-        <Heading color={"white"} fontSize={"65px"}>
+        <Heading
+          color={"white"}
+          fontSize={"65px"}
+          textAlign={"center"}
+          maxHeight={"30%"}
+        >
           Making Your Life Safer
         </Heading>
         <Text
           color={"white"}
           fontSize={"25px"}
           maxWidth={"65%"}
+          maxHeight={"30%"}
           textAlign={"center"}
         >
           We provide customized security solutions to help protect your people
           and property.
         </Text>
-        <Button
-          style={{ background: `linear-gradient(to right,#1F2247, #009688)` }}
-          color={"white"}
-          fontSize={"15px"}
-          borderRadius={"0px"}
-          width={"25%"}
-          height={"15%"}
-        >
-          LEARN MORE
-        </Button>
+        <ActionButton fontSize={"15px"}>LEARN MORE</ActionButton>
       </Box>
     </Box>
   );
