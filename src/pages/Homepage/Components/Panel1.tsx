@@ -33,7 +33,7 @@ const Panel1 = () => {
       </Box>
       <Box height={"100%"} width={"50%"} paddingLeft={"5%"} paddingY={"3%"}>
         <Box width={"60%"}>
-          <Heading fontSize={"20px"} color={"brand.500"} marginBottom={"3%"}>
+          <Heading fontSize={"25px"} color={"brand.500"} marginBottom={"3%"}>
             ABOUT US
           </Heading>
           <Text
