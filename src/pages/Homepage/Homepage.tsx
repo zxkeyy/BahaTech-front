@@ -8,6 +8,8 @@ import Panel5 from "./Components/Panel5";
 import Panel6 from "./Components/Panel6";
 import Panel7 from "./Components/Panel7";
 import Panel8 from "./Components/Panel8";
+import Panel9 from "./Components/Panel9";
+import Banner from "../../assets/Banner.png"
 
 const HomePage = () => {
   return (
@@ -21,6 +23,8 @@ const HomePage = () => {
       <Panel6 />
       <Panel7 />
       <Panel8 />
+      <Panel9 />
+      <Box bgImage={Banner} aspectRatio={1920 / 150} width={"100%"} bgSize={"100%"}/>
     </Box>
   );
 };
