@@ -7,6 +7,7 @@ import Panel4 from "./Components/Panel4";
 import Panel5 from "./Components/Panel5";
 import Panel6 from "./Components/Panel6";
 import Panel7 from "./Components/Panel7";
+import Panel8 from "./Components/Panel8";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Panel5 />
       <Panel6 />
       <Panel7 />
+      <Panel8 />
     </Box>
   );
 };
