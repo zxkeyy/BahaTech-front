@@ -1,5 +1,5 @@
 import { Box, Button, HStack, Image } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavButton from "./NavButton";
 import Logo from "../../assets/Logo bt snbg 1.png";
 import Cart from "./Cart";
@@ -7,6 +7,7 @@ import Tools from "./Tools";
 import { IoPersonCircle } from "react-icons/io5";
 
 const Navbar = () => {
+  const location = useLocation();
   return (
     <HStack
       bgColor={"bg.500"}
