@@ -1,6 +1,22 @@
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  Image,
+  Input,
+  InputGroup,
+  InputRightElement,
+  Text,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo bt snbg 1.png";
+import Logo from "../../assets/LogoWhite.png";
+import bgImage from "../../assets/FooterImage.png";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaWhatsappSquare,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -10,6 +26,8 @@ const Footer = () => {
       display="flex"
       justifyContent="center"
       textColor="white"
+      aspectRatio={1440 / 360}
+      bgImage={bgImage}
     >
       <Box
         width="70%"
@@ -33,7 +51,59 @@ const Footer = () => {
             business to new heights with the help of our CCTV & Security
             products.
           </Text>
-          <Box display="flex" height="40Px"></Box>
+          <Box display="flex">
+            <Box
+              marginRight={"5%"}
+              bgColor={"white"}
+              boxSize={"40px"}
+              display="flex"
+              justifyContent={"center"}
+              alignItems={"center"}
+              borderRadius={"10"}
+            >
+              <Link to="https://www.facebook.com">
+                <FaFacebookSquare color="#3B5999" size="50px" />
+              </Link>
+            </Box>
+            <Box
+              marginRight={"5%"}
+              bgColor={"white"}
+              boxSize={"40px"}
+              display="flex"
+              justifyContent={"center"}
+              alignItems={"center"}
+              borderRadius={"10"}
+            >
+              <Link to="https://www.whatsapp.com">
+                <FaWhatsappSquare color="" fill="#57B960" size="50px" />
+              </Link>
+            </Box>
+            <Box
+              marginRight={"5%"}
+              bgColor={"white"}
+              boxSize={"40px"}
+              display="flex"
+              justifyContent={"center"}
+              alignItems={"center"}
+              borderRadius={"10"}
+            >
+              <Link to="https://www.instagram.com">
+                <FaInstagramSquare color="#E4405F" size="50px" />
+              </Link>
+            </Box>
+            <Box
+              bgColor={"white"}
+              boxSize={"40px"}
+              display="flex"
+              justifyContent={"center"}
+              alignItems={"center"}
+              borderRadius={"10"}
+            >
+              <Link to="https://www.x.com">
+                <FaSquareXTwitter color="black" size="50px" />
+              </Link>
+            </Box>
+          </Box>
         </Box>
         <Box
           width="20%"
@@ -42,7 +112,9 @@ const Footer = () => {
           flexDirection="column"
           justifyContent="space-between"
         >
-          <Heading fontSize="20px">Our Services</Heading>
+          <Heading fontSize="20px" fontWeight="bold">
+            Our Services
+          </Heading>
           <Link to="/">
             <Text>{"> "}CCTV Installation</Text>
           </Link>
@@ -94,7 +166,22 @@ const Footer = () => {
             Do you want tto get the information about our Latest News & Updates
             without delay? Subscribe to our Newsletter and get in touch with us.
           </Text>
-          <Box width="100%" height="50px" bgColor="white"></Box>
+          <Box width="100%">
+            <InputGroup>
+              <Input
+                bgColor={"white"}
+                colorScheme="white"
+                placeholder="Email Address"
+                textColor={"black"}
+                fontSize={"12px"}
+              ></Input>
+              <InputRightElement width="fit-content">
+                <Button colorScheme="teal" borderLeftRadius={0}>
+                  Sign Up
+                </Button>
+              </InputRightElement>
+            </InputGroup>
+          </Box>
         </Box>
       </Box>
     </Box>
