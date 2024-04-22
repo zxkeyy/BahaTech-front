@@ -26,11 +26,11 @@ const Footer = () => {
       display="flex"
       justifyContent="center"
       textColor="white"
-      aspectRatio={1440 / 360}
+      aspectRatio={1440 / 300}
       bgImage={bgImage}
     >
       <Box
-        width="70%"
+        width="60%"
         display={"flex"}
         justifyContent="space-between"
         paddingY={"5%"}
@@ -41,12 +41,12 @@ const Footer = () => {
           flexDirection="column"
           justifyContent="space-between"
         >
-          <Box width={"100%"}>
+          <Box width={"100%"} marginTop={"-50px"}>
             <Link to="/">
               <Image height={"100%"} src={Logo} alt="BahaTech" />
             </Link>
           </Box>
-          <Text textColor={"white"}>
+          <Text textColor={"white"} fontSize={"14px"}>
             We are the leading security service provider in town. Take your
             business to new heights with the help of our CCTV & Security
             products.
@@ -107,7 +107,7 @@ const Footer = () => {
         </Box>
         <Box
           width="20%"
-          fontSize="15px"
+          fontSize="14px"
           display="flex"
           flexDirection="column"
           justifyContent="space-between"
@@ -133,7 +133,7 @@ const Footer = () => {
         </Box>
         <Box
           width="20%"
-          fontSize="15px"
+          fontSize="14px"
           display="flex"
           flexDirection="column"
           justifyContent="space-between"
@@ -161,8 +161,8 @@ const Footer = () => {
           flexDirection="column"
           justifyContent="space-between"
         >
-          <Heading fontSize="20px">Subscribe to our E-mail list</Heading>
-          <Text fontSize="15px">
+          <Heading fontSize="17px">Subscribe to our E-mail list</Heading>
+          <Text fontSize="14px">
             Do you want tto get the information about our Latest News & Updates
             without delay? Subscribe to our Newsletter and get in touch with us.
           </Text>
